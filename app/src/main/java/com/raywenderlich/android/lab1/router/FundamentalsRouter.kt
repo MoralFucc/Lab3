@@ -15,7 +15,10 @@ sealed class Screen {
     object Buttons : Screen()
     object ProgressIndicator : Screen()
     object AlertDialog : Screen()
+
+    object RowScreen: Screen()
 }
+
 
 object FundamentalsRouter {
     var currentScreen: MutableState<Screen> = mutableStateOf(Screen.Navigation)

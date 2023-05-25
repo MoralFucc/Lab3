@@ -4,9 +4,11 @@ import android.content.Intent.ShortcutIconResource
 import android.graphics.drawable.Icon
 import android.widget.GridView
 import android.widget.RemoteViews.RemoteCollectionItems
+import androidx.compose.foundation.layout.RowScope
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.vector.ImageVector
 import com.raywenderlich.android.lab1.router.BackButtonHandler
 import com.raywenderlich.android.lab1.router.FundamentalsRouter
 import com.raywenderlich.android.lab1.router.Screen
@@ -43,5 +45,11 @@ fun RowItem(rowItems: List<ShortcutIconResource>) {
     //code
 }
 
+@Composable
+fun RowScope.GridIcon(iconResource: IconResource){
+    //code
+}
+
+data class IconResource(val imageVector: ImageVector, val isVisible: Boolean)
 
 

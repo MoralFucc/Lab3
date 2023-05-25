@@ -22,4 +22,5 @@
     <string name="kotlin">kotlin</string>
     <string name="swift">swift</string>
     <string name="ios">ios</string>
+    <string name="button_screenRow">Row</string>
 </resources>

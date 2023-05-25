@@ -23,4 +23,7 @@
     <string name="swift">swift</string>
     <string name="ios">ios</string>
     <string name="button_screenRow">Row</string>
+    <string name="advanced_architecture">advanced_architecture_android</string>
+    <string name="learn_kotlin">kotlin_aprentice</string>
+    <string name="coroutines_kotlin">kotlin_coroutines</string>
 </resources>

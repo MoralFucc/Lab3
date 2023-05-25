@@ -18,4 +18,8 @@
     <string name="third">Третий</string>
     <string name="menu">Меню</string>
     <string name="MyComposeApp">MyComposeApp</string>
+    <string name="android">android</string>
+    <string name="kotlin">kotlin</string>
+    <string name="swift">swift</string>
+    <string name="ios">ios</string>
 </resources>

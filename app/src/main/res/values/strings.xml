@@ -26,4 +26,6 @@
     <string name="advanced_architecture">advanced_architecture_android</string>
     <string name="learn_kotlin">kotlin_aprentice</string>
     <string name="coroutines_kotlin">kotlin_coroutines</string>
+    <string name="grid_icon">Grid</string>
+    <string name="Grid">Grid</string>
 </resources>

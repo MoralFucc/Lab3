@@ -11,6 +11,13 @@
     <string name="button_alertDialog">Диалоговое окно</string>
     <string name="title_alertDialog">Внимание</string>
     <string name="alertDialog_about">Это диалоговое окно</string>
+    <string name="List">List</string>
+    <string name="Kroll">Прокрутка</string>
+    <string name="rowScreen">Контейнер Row</string>
+    <string name="myColumn">Контейнер Column</string>
+    <string name="myBox">Контейнер Box</string>
+    <string name="mySurface">Контейнер Surface</string>
+    <string name="myScaffold">Контейнер Scaffold</string>
     <string name="insert_email">Email</string>
     <string name="RowScreens">RowScreen</string>
     <string name="first">Первый</string>
@@ -21,6 +28,10 @@
     <string name="android">android</string>
     <string name="kotlin">kotlin</string>
     <string name="swift">swift</string>
+    <string name="oblozki">Обложки книг</string>
+    <string name="ysoversa">Усовершенствованная архитектура Android</string>
+    <string name="izuch">Изучение Kotlin</string>
+    <string name="korytin">Корутины в Kotlin</string>
     <string name="ios">ios</string>
     <string name="button_screenRow">Row</string>
     <string name="advanced_architecture">advanced_architecture_android</string>

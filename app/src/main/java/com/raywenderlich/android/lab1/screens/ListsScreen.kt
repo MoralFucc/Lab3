@@ -1,18 +1,17 @@
 package com.raywenderlich.android.lab1.screens
 
 import androidx.annotation.StringRes
-import androidx.compose.foundation.horizontalScroll
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.colorResource
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -22,7 +21,7 @@ import com.raywenderlich.android.lab1.router.BackButtonHandler
 import com.raywenderlich.android.lab1.router.FundamentalsRouter
 import com.raywenderlich.android.lab1.router.Screen
 
-private val items = listOf(
+private val items= listOf(
     BookCategory(
         R.string.android,
         listOf(
@@ -56,6 +55,7 @@ private val items = listOf(
 )
 
 @Composable
+
 fun ListScreen(){
     MyList()
 
@@ -66,13 +66,13 @@ fun ListScreen(){
 
 @Composable
 fun MyList(){
-    LazyColumn {
-        items(items) { item -> ListItem(item)}
+    LazyColumn{
+        items(items){item -> ListItem(item) }
     }
 }
 
 @Composable
-fun ListItem(bookCategory: BookCategory, modifier: Modifier = Modifier) {
+fun ListItem(bookCategory: BookCategory, modifier: Modifier=Modifier) {
     Column(modifier = Modifier.padding(8.dp)) {
         Text(
             text = stringResource(bookCategory.categoryResourceId),
@@ -82,10 +82,23 @@ fun ListItem(bookCategory: BookCategory, modifier: Modifier = Modifier) {
         )
         Spacer(modifier = modifier.height(8.dp))
     }
+    LazyRow {
+        items(bookCategory.bookImageResource) { items ->
+            BookImage(items)
+        }
+    }
 }
-
+@Composable
+fun BookImage(imageResorce: Int){
+    Image(
+        modifier = Modifier.size(170.dp,200.dp),
+        painter = painterResource(id = imageResorce),
+        contentScale = ContentScale.Fit,
+        contentDescription = stringResource(R.string.oblozki)
+    )
+}
 data class BookCategory(
     @StringRes
     val categoryResourceId: Int,
-    val bookImageResources: List<Int>
+    val bookImageResource: List<Int>
 )
